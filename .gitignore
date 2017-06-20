@@ -1,0 +1,9 @@
+node_modules
+.DS_Store
+
+.idea/liri-node-app.iml
+.idea/modules.xml
+.idea/workspace.xml
+.idea/Flashcard-Generator.iml
+README.md
+package.json
