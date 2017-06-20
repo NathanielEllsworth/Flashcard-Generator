@@ -1,0 +1,22 @@
+{
+  "name": "nate",
+  "version": "1.0.0",
+  "description": "nate",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NathanielEllsworth/Flashcard-Generator.git"
+  },
+  "author": "nate",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NathanielEllsworth/Flashcard-Generator/issues"
+  },
+  "homepage": "https://github.com/NathanielEllsworth/Flashcard-Generator#readme",
+  "dependencies": {
+    "inquire": "^0.4.8"
+  }
+}
