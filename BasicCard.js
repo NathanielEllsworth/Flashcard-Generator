@@ -70,29 +70,3 @@ inquirer.prompt([
 });
 
 
-
-//in the mvc
-
-
-/*function BasicCard(front, back) {
-    this.front = front;
-    this.back = back;
-
-}*/
-
-
-
-
-
-
-
-
-/*exports.basicCard = function basicCard(front, back) {
-
-    this.front = front;
-    this.back = back
-
-};*/
-
-
-//module.exports = BasicCard;
