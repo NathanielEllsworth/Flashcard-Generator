@@ -12,7 +12,7 @@ exports.BasicCards = function BasicCards (front, back){
 };
 
 
-exports.CozeCards = function BasicCards (front, clozeBack){
+exports.ClozeCards = function BasicCards (front, clozeBack){
 
     this.front = front;
     this.clozeBack = clozeBack;

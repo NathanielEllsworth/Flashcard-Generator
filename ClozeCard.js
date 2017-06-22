@@ -5,9 +5,9 @@ var inquirer = require("inquirer");
 var MVC = require("./MVC.js");
 
 
-var one = new MVC.CozeCards("The first president of the United States was George Washington.", "George Washington");
-var two = new MVC.CozeCards("The second president of the United States was John Adams", "John Adams");
-var three = new MVC.CozeCards("The third president of the United States was Thomas Jefferson", "Thomas Jefferson");
+var one = new MVC.ClozeCards("The first president of the United States was George Washington.", "George Washington");
+var two = new MVC.ClozeCards("The second president of the United States was John Adams", "John Adams");
+var three = new MVC.ClozeCards("The third president of the United States was Thomas Jefferson", "Thomas Jefferson");
 
 
 /*inquirer.prompt([
@@ -101,7 +101,7 @@ inquirer.prompt([{
 
 
 ]).then(function (ans) {
-    if (two.clozeBack === ans.secondQuestion) {
+    if (two.clozeBack === ans.thirdQuestion) {
         console.log('Correct!');
     } else {
         console.log("Wrong, the correct answer was *Thomas Jefferson* ")
