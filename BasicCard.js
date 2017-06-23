@@ -69,6 +69,8 @@ inquirer.prompt([
     } else {
         console.log("#3 Wrong, the correct answer was " + three.back)
     }
+    console.log("");
+    console.log("");
 
 
 });
