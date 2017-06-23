@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/NathanielEllsworth/Flashcard-Generator#readme",
   "dependencies": {
-    "inquire": "^0.4.8"
+    "inquire": "^0.4.8",
+    "inquirer": "^3.1.1"
   }
 }

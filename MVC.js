@@ -15,11 +15,9 @@ exports.BasicCards = function BasicCards (front, back){
 exports.ClozeCards = function BasicCards (front, clozeBack){
 
     this.front = front;
+
     this.clozeBack = clozeBack;
 
-    this.partialText = this.front.replace(clozeBack, "**Hidden**");
-
-    this.fullText = this.clozeBack + this.partialText;
-
+    this.partialText = this.front.replace(clozeBack, ".........");
 
 };

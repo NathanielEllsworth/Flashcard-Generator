@@ -1,5 +1,3 @@
-
-
 var inquirer = require("inquirer");
 
 var MVC = require("./MVC.js");
@@ -10,9 +8,6 @@ var two = new MVC.ClozeCards("The second president of the United States was John
 var three = new MVC.ClozeCards("The third president of the United States was Thomas Jefferson", "Thomas Jefferson");
 
 
-
-
-
 /**
  * Question 1
  */
@@ -21,10 +16,8 @@ var three = new MVC.ClozeCards("The third president of the United States was Tho
 
 inquirer.prompt([{
     name: "firstQuestion",
-    message: one.partial
+    message: one.partialText
 }
-
-
 
 
 ]).then(function (ans) {
@@ -35,54 +28,47 @@ inquirer.prompt([{
     }
 
 
+    /**
+     * Question 2
+     */
 
 
 
-/**
- * Question 2
- */
-
-
-
-inquirer.prompt([{
-    name: "secondQuestion",
-    message: two.partial
-}
-
-
-
-
-]).then(function (ans) {
-    if (two.clozeBack === ans.secondQuestion) {
-        console.log('Correct!');
-    } else {
-        console.log("Wrong, the correct answer was *John Adams* ")
+    inquirer.prompt([{
+        name: "secondQuestion",
+        message: two.partialText
     }
 
 
+    ]).then(function (ans) {
+        if (two.clozeBack === ans.secondQuestion) {
+            console.log('Correct!');
+        } else {
+            console.log("Wrong, the correct answer was *John Adams* ")
+        }
+
+
+        /**
+         * Question 3
+         */
 
 
 
-/**
- * Question 3
- */
+        inquirer.prompt([{
+            name: "thirdQuestion",
+            message: three.partialText
+        }
+
+
+        ]).then(function (ans) {
+            if (two.clozeBack === ans.thirdQuestion) {
+                console.log('Correct!');
+            } else {
+                console.log("Wrong, the correct answer was *Thomas Jefferson* ")
+            }
 
 
 
-inquirer.prompt([{
-    name: "thirdQuestion",
-    message: three.partial
-}
-
-
-
-
-]).then(function (ans) {
-    if (two.clozeBack === ans.thirdQuestion) {
-        console.log('Correct!');
-    } else {
-        console.log("Wrong, the correct answer was *Thomas Jefferson* ")
-    }
-
-}
-
+        })
+    })
+});
